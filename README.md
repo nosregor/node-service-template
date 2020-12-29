@@ -7,3 +7,4 @@ Boilerplate with initial setup containing:
 - Environment Variables (dotenv)
 - Express
 - Cors
+- Eslint
