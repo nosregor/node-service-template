@@ -6,3 +6,4 @@ Boilerplate with initial setup containing:
 - Babel
 - Environment Variables (dotenv)
 - Express
+- Cors
