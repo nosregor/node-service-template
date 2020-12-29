@@ -4,4 +4,5 @@ Boilerplate with initial setup containing:
 
 - Nodemon
 - Babel
-- Environment Variables
+- Environment Variables (dotenv)
+- express
