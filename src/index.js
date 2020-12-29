@@ -1,5 +1,12 @@
+import express from 'express';
 import 'dotenv/config';
 
-console.log('Hello Node.js project.');
+const app = express();
 
-console.log(process.env.MY_SECRET);
+app.get('/', (req, res) => {
+  res.send('Hello World!');
+});
+
+app.listen(process.env.PORT, () =>
+  console.log(`App listening on port ${process.env.PORT}!`)
+);
