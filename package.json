@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node src/index.js",
+    "start": "nodemon src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/nosregor/node-service-template/issues"
   },
-  "homepage": "https://github.com/nosregor/node-service-template#readme"
+  "homepage": "https://github.com/nosregor/node-service-template#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
 }
