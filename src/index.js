@@ -1,6 +1,8 @@
 import 'dotenv/config';
 import cors from 'cors';
 import express from 'express';
+import sum from './sum';
+import callMyFunction from './call-my-function';
 
 const app = express();
 
@@ -11,7 +13,13 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 
 app.get('/', (req, res) => {
-  res.send('Hello Project');
-});
+  console.log(sum(1, 2));
 
-app.listen(port, () => console.log(`Listening on ${port}`));
+  callMyFunction( () => {
+    console.log('Hello world')
+
+  res.send('Hello Project');
+})
+
+
+app.listen(port, () => console.log(`Listening on ${port}`))
