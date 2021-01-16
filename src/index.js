@@ -13,13 +13,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 
 app.get('/', (req, res) => {
-  console.log(sum(1, 2));
-
-  callMyFunction( () => {
-    console.log('Hello world')
-
   res.send('Hello Project');
-})
+});
 
-
-app.listen(port, () => console.log(`Listening on ${port}`))
+app.listen(port, () => console.log(`Listening on ${port}`));
